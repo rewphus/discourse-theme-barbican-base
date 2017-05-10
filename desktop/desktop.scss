@@ -38,6 +38,7 @@
 .category-links:hover{
     .category-link{
         height: 20px;
+        transition-delay: .5s;
         font-size: .5em;
         line-height: .5em;
     }
