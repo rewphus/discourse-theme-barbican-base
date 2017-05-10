@@ -52,6 +52,27 @@
     margin: 0px !important;
 }
 
+.panel-body-contents div>div .menu-links{
+        &:before{
+        content: "Layout";
+        }
+     li:nth-child(1) a.widget-link:before{
+            content: "\f0c9";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+    li:nth-child(2) a.widget-link:before{
+            content: "\f0ca";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+            li:nth-child(3) a.widget-link:before{
+            content: "\f03e";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+}
+
 /* Category Selector - Styling for large category selector on the left.
 ======================================================================================================================= */
 .badge-wrapper.bullet span.badge-category-parent-bg, .badge-wrapper.bullet span.badge-category-parent-bg {
