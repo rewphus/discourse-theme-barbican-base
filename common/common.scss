@@ -2,6 +2,11 @@ html {
     font-family: 'Muli', sans-serif;
 }
 
+//need to figure out what was cuasing this to display?
+#main-outlet>.category-admin-menu {
+    display: none;
+}
+
 
 /* Header - Styling for the navigation header.
 ======================================================================================================================= */
