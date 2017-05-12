@@ -2,28 +2,31 @@ html {
     font-family: 'Muli', sans-serif;
 }
 
+
 /* Header - Styling for the navigation header.
 ======================================================================================================================= */
-.hamburger-panel .menu-panel, .user-menu .menu-panel{
+
+.hamburger-panel .menu-panel,
+.user-menu .menu-panel {
     height: 100vh !important;
     width: 25% !important;
     right: 0px !important;
     position: fixed !important;
-    
-    .panel-body{
+    .panel-body {
         height: 90vh !important;
     }
-    
     .menu-links.columned li {
         float: none;
         width: 100%;
     }
 }
 
+
 /* Buttons - Styling for the various buttons across the app
 ======================================================================================================================= */
 
-.btn:not(.btn-social), .btn-small{
+.btn:not(.btn-social),
+.btn-small {
     color: $primary;
     background-color: $secondary;
     border: 1px solid $primary;
@@ -34,42 +37,44 @@ html {
     color: $secondary;
 }
 
-.btn-primary{
+.btn-primary {
     color: $tertiary !important;
     border: 1px solid $tertiary !important;
-    &:hover{
-        color:$secondary !important;
+    &:hover {
+        color: $secondary !important;
         background-color: $tertiary !important;
     }
 }
 
-.btn-danger{
+.btn-danger {
     color: $danger !important;
     border: 1px solid $danger !important;
-    &:hover{
-        color:$secondary !important;
+    &:hover {
+        color: $secondary !important;
         background-color: $danger !important;
     }
 }
 
-.btn-success{
+.btn-success {
     color: $success !important;
     border: 1px solid $success !important;
-    &:hover{
-        color:$secondary !important;
+    &:hover {
+        color: $secondary !important;
         background-color: $success !important;
     }
 }
 
-.btn[disabled], .btn.disabled {
+.btn[disabled],
+.btn.disabled {
     background: #e9e9e9 !important;
     cursor: not-allowed;
 }
 
-.btn.bulk-select, #reply-control .d-editor-button-bar .btn{
+.btn.bulk-select,
+#reply-control .d-editor-button-bar .btn {
     border: 0px;
-    &:hover{
-        background-color: rgba(0,0,0,0) !important;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0) !important;
     }
 }
 
@@ -85,14 +90,15 @@ html {
     box-shadow: inset 0 0 10px $primary;
 }
 
+
 /* Reply Control - Styling for the reply box that appears at bottom of screen during a Reply
 ======================================================================================================================= */
 
-.timeline-container .topic-timeline .timeline-scrollarea{
+.timeline-container .topic-timeline .timeline-scrollarea {
     border-color: $primary;
 }
 
-.timeline-container .topic-timeline .timeline-handle{
+.timeline-container .topic-timeline .timeline-handle {
     border-radius: 0px;
     border: 1px solid $primary;
     background-color: $secondary;
@@ -103,11 +109,12 @@ html {
     margin-left: -.6em;
 }
 
-#reply-control{
+#reply-control {
     background-color: $header_background;
 }
 
-#reply-control.edit-title .contents input#reply-title, #reply-control .select2-container a.select2-choice {
+#reply-control.edit-title .contents input#reply-title,
+#reply-control .select2-container a.select2-choice {
     color: $secondary;
     background-color: $header_background;
     border-bottom: 2px solid $secondary;
@@ -119,14 +126,23 @@ html {
     font-size: 1.5em;
 }
 
-.reply-to a, .submit-panel .cancel{
+.reply-to a,
+.submit-panel .cancel {
     color: $secondary;
 }
 
-#reply-control .select2-container{
+#reply-control .select2-container {
     border: 0px;
 }
 
-.control-row.reply-area{
+//adding background color when adding users to a message
+.control-row.reply-area {
     color: $secondary;
+    .ac-wrap {
+        background-color: $header-background;
+
+        input{
+            padding-left: 10px
+        }
+    }
 }
