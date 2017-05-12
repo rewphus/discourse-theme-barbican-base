@@ -7,6 +7,11 @@ html {
     display: none;
 }
 
+//votes had too much padding in header, is this happening everywhere?
+.extra-info-wrapper .topic-header-extra {
+    padding-top: 0px
+}
+
 
 /* Header - Styling for the navigation header.
 ======================================================================================================================= */
